@@ -12,10 +12,6 @@ cd calculator-react
 ```
 
 ```sh
-npx create-react-app .
-```
-
-```sh
 npm start
 ```
 
