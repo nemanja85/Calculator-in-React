@@ -1,8 +1,8 @@
-root {
-  --primary: #ffff00;
+:root {
+  --primary: #ff0000;
   --secondary: #1150bd;
-  --dark: #00283C;
-  --light: #eee
+  --dark: #00283c;
+  --light: #eee;
 }
 
 * {
@@ -12,13 +12,71 @@ root {
 }
 
 body {
-  background-color: var(--light)
+  background-color: var(--light);
 }
 
 .App {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-  
+
+.calculator {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: right;
+  color: var(--light);
+  background-color: var(--dark);
+  padding: 16px;
+}
+
+.display span {
+  font-size: 14px;
+}
+
+button {
+  appearance: none;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 16px;
+  border: none;
+  color: var(--light);
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.operators {
+  display: flex;
+}
+
+.operators button {
+  flex: 1 1 0%;
+  background-color: var(--primary);
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: var(--dark);
+}
