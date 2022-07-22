@@ -33,9 +33,9 @@ body {
 }
 
 .display {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
   text-align: right;
   color: var(--light);
   background-color: var(--dark);
@@ -44,6 +44,9 @@ body {
 
 .display span {
   font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  padding-right: 5px;
 }
 
 button {
