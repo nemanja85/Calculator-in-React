@@ -12,7 +12,7 @@ cd calculator-react
 ```
 
 ```sh
-npm start
+npm install 
 ```
 
 ```sh
